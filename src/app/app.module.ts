@@ -3,16 +3,27 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+//import { FirstExComponent } from './first-ex/first-ex.component';
+import {SimpleComponent} from './lifeCycleHook/simple.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    //includes component, pipe, direvtive
+    AppComponent,
+    //FirstExComponent,
+    SimpleComponent,
   ],
   imports: [
+    //modules
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    //service
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
